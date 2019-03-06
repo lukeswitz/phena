@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/lukeswitz/phena.svg?branch=master)](https://travis-ci.com/lukeswitz/phena)
+
 ## Phena
 ```
   .     '     ,
