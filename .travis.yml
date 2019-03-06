@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode9.2
+xcode_workspace : Phena.xcworkspace
+xcode_scheme: Phena
+cache:
+- bundler
+- cocoapods
+script: xcodebuild -workspace Phena/Phena.xcworkspace -scheme Phena -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
