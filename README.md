@@ -1,6 +1,3 @@
-<img src="https://www.rootdowndigital.com/wp-content/uploads/2017/12/300x300.png" height="75" width="75" align="right">
-
-
 ### Phena
 
 <img src="https://cdn.iconscout.com/icon/free/png-256/swift-15-761717.png" height="25" width="25" align="left"> [![Build Status](https://travis-ci.com/lukeswitz/phena.svg?branch=swift)](https://travis-ci.com/lukeswitz/phena)  
