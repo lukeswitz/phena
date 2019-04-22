@@ -19,8 +19,15 @@
 
 #### Project Objective
 - - - -
-Securely look after what’s important using E2EE. Configurable, multi-device Signal messaging alerts. Powerful, effective & non-invasive; Phena uses AI & machine learning coupled with phone sensors to protect the safety of property & individuals. Cross platform deployment, native codebase.
+Securely look after what’s important using E2EE. Configurable, multi-device, encrypted messaging alerts (Briar & Signal for now). Powerful, transparent, effective & non-invasive. 
 
-### Features
+We were tired of all the security apps out there either collecting user data or simply not working. When the app has one job, get it done and do it well. 
+
+#### Phena what?
+Phena (from Phenakite, the gemstone attributed to higher awareness) uses AI & machine learning coupled with phone sensors to guard the safety of individuals and their property. Cross platform deployment, native codebase.
+
+### What comes next?
 - - - -
-Alpha build coming soon
+Alpha build coming soon: iOS rollouts happen prior to Android in some cases. TestFlight will be available soon along with weekly/nightly builds. 
+
+Accepting feature requests and making them happen: this app is for you, not me alone. Your input is valuable, what would you like to see?
