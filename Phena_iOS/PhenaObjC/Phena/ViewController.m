@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    // Get our Realm file's parent directory
+    NSString *folderPath = realm.configuration.fileURL.URLByDeletingLastPathComponent.path;
+    NSLog(@"Realm folder path: %@", folderPath);
+    
+    /**
+    //Disable file protection for this directory if we want background refresh
+    [[NSFileManager defaultManager] setAttributes:@{NSFileProtectionKey: NSFileProtectionNone}
+                                     ofItemAtPath:folderPath error:nil];
+     **/
+    
 }
 
 

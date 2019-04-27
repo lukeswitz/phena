@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		649291629A63710C3F091CE2 /* libPods-Phena.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E61B83F259034BF509D0FA5 /* libPods-Phena.a */; };
 		E950BEB22232FDF1002E35FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E950BEB12232FDF1002E35FA /* AppDelegate.m */; };
 		E950BEB52232FDF1002E35FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E950BEB42232FDF1002E35FA /* ViewController.m */; };
 		E950BEB82232FDF1002E35FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E950BEB62232FDF1002E35FA /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E61B83F259034BF509D0FA5 /* libPods-Phena.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Phena.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BA4BF5EAF54654D3F42AAC /* Pods-Phena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phena.release.xcconfig"; path = "Target Support Files/Pods-Phena/Pods-Phena.release.xcconfig"; sourceTree = "<group>"; };
+		B15FB20B1A39E680ECBAFDF1 /* Pods-Phena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phena.debug.xcconfig"; path = "Target Support Files/Pods-Phena/Pods-Phena.debug.xcconfig"; sourceTree = "<group>"; };
 		E950BEAD2232FDF1002E35FA /* Phena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E950BEB02232FDF1002E35FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E950BEB12232FDF1002E35FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,17 +39,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649291629A63710C3F091CE2 /* libPods-Phena.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8A956BC440678C665C85076 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B15FB20B1A39E680ECBAFDF1 /* Pods-Phena.debug.xcconfig */,
+				80BA4BF5EAF54654D3F42AAC /* Pods-Phena.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E93A9A7B2274B8140055E593 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		E950BEA42232FDF1002E35FA = {
 			isa = PBXGroup;
 			children = (
 				E950BEAF2232FDF1002E35FA /* Phena */,
 				E950BEAE2232FDF1002E35FA /* Products */,
+				D8A956BC440678C665C85076 /* Pods */,
+				F99453753437887CD6919BA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +83,7 @@
 		E950BEAF2232FDF1002E35FA /* Phena */ = {
 			isa = PBXGroup;
 			children = (
+				E93A9A7B2274B8140055E593 /* Persistence */,
 				E950BEB02232FDF1002E35FA /* AppDelegate.h */,
 				E950BEB12232FDF1002E35FA /* AppDelegate.m */,
 				E950BEB32232FDF1002E35FA /* ViewController.h */,
@@ -74,6 +98,14 @@
 			path = Phena;
 			sourceTree = "<group>";
 		};
+		F99453753437887CD6919BA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E61B83F259034BF509D0FA5 /* libPods-Phena.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E950BEC62232FDF2002E35FA /* Build configuration list for PBXNativeTarget "Phena" */;
 			buildPhases = (
+				872AC17115433EA3AD9CED3C /* [CP] Check Pods Manifest.lock */,
 				E950BEA92232FDF1002E35FA /* Sources */,
 				E950BEAA2232FDF1002E35FA /* Frameworks */,
 				E950BEAB2232FDF1002E35FA /* Resources */,
@@ -138,6 +171,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		872AC17115433EA3AD9CED3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Phena-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E950BEA92232FDF1002E35FA /* Sources */ = {
@@ -287,6 +345,7 @@
 		};
 		E950BEC72232FDF2002E35FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15FB20B1A39E680ECBAFDF1 /* Pods-Phena.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +364,7 @@
 		};
 		E950BEC82232FDF2002E35FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BA4BF5EAF54654D3F42AAC /* Pods-Phena.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
