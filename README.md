@@ -1,4 +1,6 @@
 ## Phena
+[![BCH compliance](https://bettercodehub.com/edge/badge/lukeswitz/phena?branch=master)](https://bettercodehub.com/)
+
 <img src="https://cdn.iconscout.com/icon/free/png-256/swift-15-761717.png" height="30" width="30" align="left"> [![Build Status](https://travis-ci.com/lukeswitz/phena.svg?branch=swift)](https://travis-ci.com/lukeswitz/phena)  
 
 <img src="https://wwwtalks.com/wp-content/uploads/2017/11/objective-c-training-croma-campus.png" height="30" width="30" align="left" > [![Build Status](https://travis-ci.com/lukeswitz/phena.svg?branch=obj-c)](https://travis-ci.com/lukeswitz/phena)
