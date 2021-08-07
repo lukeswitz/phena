@@ -9,7 +9,7 @@
 
 #### Project Objective
 - - - -
-Securely look after what’s important using E2EE. Configurable, multi-device, encrypted messaging alerts (Briar & Signal for now). Powerful, transparent, effective & non-invasive. 
+Securely look after what’s important using E2EE. Configurable, multi-device, encrypted messaging alerts (Matrix/Signal). Powerful, transparent, effective & non-invasive. 
 
 We were tired of all the security apps out there either collecting user data or simply not working. When the app has one job, get it done and do it well. 
 
